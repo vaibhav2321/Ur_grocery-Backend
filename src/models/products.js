@@ -6,6 +6,11 @@ const productSchema = mongoose.Schema({
         required: true,
         unique: true
     },
+    productImage: {
+        type: String, // Assuming you store the path or URL to the image
+        required: true,
+        unique: true
+    },
     productCost: {
         type: Number,
         required: true
@@ -19,7 +24,7 @@ const productSchema = mongoose.Schema({
         required: true
     }, 
     thumbnail:{
-        type: String,
+        type: String, // Assuming you store the path or URL to the thumbnail image
         required: true
     }
 });
